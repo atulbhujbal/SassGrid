@@ -1,20 +1,33 @@
-@if $pull == true {
-  @for $i from 0 through $columns{
-    .pull-right-#{$i}{
-      left: $i * $col-width;
-      position:relative;
-    }
-  }
-}
+$mobile : 480px;
+$tablet :768px;
+$desktop : 1000px;
 
-@if $push == true {
-  @for $i from 0 through $columns{
-    .pull-left-#{$i}{
-      left: -($i * $col-width);
-      position:relative;
-    }
-    
+$breakpoint : 100%;
+$columns : 12;
+$gutter:2%;
+$fullwidth:$desktop;  
+
+
+$push:false;
+$pull:false;
+
+
+$one-col : 100% / $columns;
+
+
+
+@mixin column($col,$light:true,$float:left){
+  @if $light == true {
+   //@include light; 
   }
+  
+  //width:$col * $col-width;
+  width:$col * ($one-col - 1%) ;
+  min-height:$div-height;
+  float:$float;
+
+  margin-right: $gutter / 2;
+  margin-left: $gutter / 2;
 }
 
 
@@ -24,27 +37,24 @@
 }
 
 
-@function calculateWidth($cols, $margin) {
-    @return ((100% - (($cols - 1)*$margin)) / $cols)
+
+.row{
+  width:100% + $gutter;
+  margin-left: -($gutter / 2);
+  margin-right: ($gutter / 2);
+  overflow:hidden;
 }
 
-@mixin column($col,$light:true,$float:left){
-  @if $light == true {
-   @include light; 
-  }
-  
-  width:$col * $col-width;
-  min-height:$div-height;
-  float:$float;
- }
-
+.row > :first-child{
+  margin-left:0;
+}
 @mixin pull-left($col){
-  right: $col * $col-width;
+  right: $col * $one-col ;
   position:relative;
 }
 
 @mixin pull-right($col){
-  right: -($col * $col-width);
+  left: $col * $one-col;
   position:relative;
 }
 

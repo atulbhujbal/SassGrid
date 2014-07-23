@@ -147,7 +147,7 @@ body{
 
 
 #content-wrapper{
-  max-width:$desktop; 
+  max-width:$fullwidth; 
   margin:0 auto;
   border: 1px solid red;
   overflow: hidden;
@@ -156,8 +156,9 @@ body{
 
 
 #diva{
-  @include column(6,true,right);
+  @include column(6,false,right);
   height:400px;
+  background:#FB6740;
   @include pull-left(3);
 
 
@@ -168,15 +169,17 @@ body{
 }
 
 #divb{
-  @include column(3);
-
+  @include column(3,false);
+  background:#FDE6D3;
   @include respond-to($tablet,4){
     @include pull-none;
   }
 }
 
 #divc{
-  @include column(3);
+  @include column(3,false);
+  background:#A5E2A4;
+
   @include pull-right(6);
 
   @include respond-to($tablet,4,right){
@@ -186,15 +189,16 @@ body{
 }
 
 #divd{
-  @include column(3);
-  
+  @include column(3,false);
+  background:#66D865;
   @include respond-to($tablet,8){
     @include pull-none;
   }
 }
 
 #dive{
-  @include column(3);
+  @include column(3,false);
+  background:#CA88FC;
   @include pull-right(6);
   
   @include respond-to($tablet,12){
@@ -216,12 +220,12 @@ body{
   
   @include column(6);
 
-  @include respond-to($tablet,8) {
+  @include respond-to($desktop,8) {
      background: orange;
      content : "Medium Viewport";
   }
 
-  @include respond-to(768,10) {
+  @include respond-to($tablet,10) {
      background: blue;
      content : "Tablet Viewport";
   }

@@ -71,6 +71,17 @@ body {
   @include line-height (16);
 }
 */
+.row {
+  width: 102%;
+  margin-left: -1%;
+  margin-right: 1%;
+  overflow: hidden;
+}
+
+.row > :first-child {
+  margin-left: 0;
+}
+
 html, body {
   height: 100%;
 }
@@ -185,101 +196,106 @@ body {
 }
 
 #diva {
-  background-color: gray;
-  background-color: rgba(86, 61, 124, 0.15);
-  width: 50%;
+  width: 44%;
   min-height: 200px;
   float: right;
+  margin-right: 1%;
+  margin-left: 1%;
   height: 400px;
+  background: #FB6740;
   right: 25%;
   position: relative;
 }
 @media only screen and (max-width: 768px) {
   #diva {
     left: 0;
-    background-color: gray;
-    background-color: rgba(86, 61, 124, 0.15);
-    width: 66.66667%;
+    width: 58.66667%;
     min-height: 200px;
     float: left;
+    margin-right: 1%;
+    margin-left: 1%;
   }
 }
 
 #divb {
-  background-color: gray;
-  background-color: rgba(86, 61, 124, 0.15);
-  width: 25%;
+  width: 22%;
   min-height: 200px;
   float: left;
+  margin-right: 1%;
+  margin-left: 1%;
+  background: #FDE6D3;
 }
 @media only screen and (max-width: 768px) {
   #divb {
     left: 0;
-    background-color: gray;
-    background-color: rgba(86, 61, 124, 0.15);
-    width: 33.33333%;
+    width: 29.33333%;
     min-height: 200px;
     float: left;
+    margin-right: 1%;
+    margin-left: 1%;
   }
 }
 
 #divc {
-  background-color: gray;
-  background-color: rgba(86, 61, 124, 0.15);
-  width: 25%;
+  width: 22%;
   min-height: 200px;
   float: left;
-  right: -50%;
+  margin-right: 1%;
+  margin-left: 1%;
+  background: #A5E2A4;
+  left: 50%;
   position: relative;
 }
 @media only screen and (max-width: 768px) {
   #divc {
     left: 0;
     height: 400px;
-    background-color: gray;
-    background-color: rgba(86, 61, 124, 0.15);
-    width: 33.33333%;
+    width: 29.33333%;
     min-height: 200px;
     float: right;
+    margin-right: 1%;
+    margin-left: 1%;
   }
 }
 
 #divd {
-  background-color: gray;
-  background-color: rgba(86, 61, 124, 0.15);
-  width: 25%;
+  width: 22%;
   min-height: 200px;
   float: left;
+  margin-right: 1%;
+  margin-left: 1%;
+  background: #66D865;
 }
 @media only screen and (max-width: 768px) {
   #divd {
     left: 0;
-    background-color: gray;
-    background-color: rgba(86, 61, 124, 0.15);
-    width: 66.66667%;
+    width: 58.66667%;
     min-height: 200px;
     float: left;
+    margin-right: 1%;
+    margin-left: 1%;
   }
 }
 
 #dive {
-  background-color: gray;
-  background-color: rgba(86, 61, 124, 0.15);
-  width: 25%;
+  width: 22%;
   min-height: 200px;
   float: left;
-  right: -50%;
+  margin-right: 1%;
+  margin-left: 1%;
+  background: #CA88FC;
+  left: 50%;
   position: relative;
 }
 @media only screen and (max-width: 768px) {
   #dive {
     height: 400px;
     clear: both;
-    background-color: gray;
-    background-color: rgba(86, 61, 124, 0.15);
-    width: 100%;
+    width: 88%;
     min-height: 200px;
     float: left;
+    margin-right: 1%;
+    margin-left: 1%;
     left: 0;
     float: none;
   }
@@ -288,11 +304,11 @@ body {
 /* Mobile Viewport*/
 @media only screen and (max-width: 480px) {
   #diva, #divb, #divc, #divd, #dive {
-    background-color: gray;
-    background-color: rgba(86, 61, 124, 0.15);
-    width: 100%;
+    width: 88%;
     min-height: 200px;
     float: left;
+    margin-right: 1%;
+    margin-left: 1%;
     left: 0;
     float: none;
   }
@@ -300,43 +316,43 @@ body {
 
 #divf {
   background: red;
-  background-color: gray;
-  background-color: rgba(86, 61, 124, 0.15);
-  width: 50%;
+  width: 44%;
   min-height: 200px;
   float: left;
+  margin-right: 1%;
+  margin-left: 1%;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
   #divf {
     background: orange;
     content: "Medium Viewport";
-    background-color: gray;
-    background-color: rgba(86, 61, 124, 0.15);
-    width: 66.66667%;
+    width: 58.66667%;
     min-height: 200px;
     float: left;
+    margin-right: 1%;
+    margin-left: 1%;
   }
 }
-@media only screen and (max-width: 768) {
+@media only screen and (max-width: 768px) {
   #divf {
     background: blue;
     content: "Tablet Viewport";
-    background-color: gray;
-    background-color: rgba(86, 61, 124, 0.15);
-    width: 83.33333%;
+    width: 73.33333%;
     min-height: 200px;
     float: left;
+    margin-right: 1%;
+    margin-left: 1%;
   }
 }
 @media only screen and (max-width: 480px) {
   #divf {
     background: gray;
     content: "Mobile Viewport";
-    background-color: gray;
-    background-color: rgba(86, 61, 124, 0.15);
-    width: 100%;
+    width: 88%;
     min-height: 200px;
     float: left;
+    margin-right: 1%;
+    margin-left: 1%;
     left: 0;
     float: none;
   }
