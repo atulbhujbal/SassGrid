@@ -12,7 +12,7 @@ $push:false;
 $pull:false;
 
 
-$one-col : 100% / $columns;
+$one-col : 100% / $columns  ;
 
 
 
@@ -22,7 +22,7 @@ $one-col : 100% / $columns;
   }
   
   //width:$col * $col-width;
-  width:$col * ($one-col - 1%) ;
+  width:($col * $one-col ) - $gutter;
   min-height:$div-height;
   float:$float;
 
@@ -45,16 +45,14 @@ $one-col : 100% / $columns;
   overflow:hidden;
 }
 
-.row > :first-child{
-  margin-left:0;
-}
+
 @mixin pull-left($col){
-  right: $col * $one-col ;
+  right: ($col * $one-col )   ;
   position:relative;
 }
 
 @mixin pull-right($col){
-  left: $col * $one-col;
+  right:-($col * $one-col);
   position:relative;
 }
 
