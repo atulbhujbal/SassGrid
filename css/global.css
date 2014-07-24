@@ -192,14 +192,14 @@ body {
 }
 
 #diva {
-  width: 48%;
+  width: 64.66667%;
   min-height: 200px;
   float: right;
   margin-right: 1%;
   margin-left: 1%;
   height: 400px;
   background: #FB6740;
-  right: 25%;
+  right: 16.66667%;
   position: relative;
 }
 @media only screen and (max-width: 768px) {
@@ -214,7 +214,7 @@ body {
 }
 
 #divb {
-  width: 23%;
+  width: 14.66667%;
   min-height: 200px;
   float: left;
   margin-right: 1%;
@@ -233,13 +233,13 @@ body {
 }
 
 #divc {
-  width: 23%;
+  width: 14.66667%;
   min-height: 200px;
   float: left;
   margin-right: 1%;
   margin-left: 1%;
   background: #A5E2A4;
-  right: -50%;
+  right: -66.66667%;
   position: relative;
 }
 @media only screen and (max-width: 768px) {
@@ -255,7 +255,7 @@ body {
 }
 
 #divd {
-  width: 23%;
+  width: 14.66667%;
   min-height: 200px;
   float: left;
   margin-right: 1%;
@@ -274,13 +274,13 @@ body {
 }
 
 #dive {
-  width: 23%;
+  width: 14.66667%;
   min-height: 200px;
   float: left;
   margin-right: 1%;
   margin-left: 1%;
   background: #CA88FC;
-  right: -50%;
+  right: -66.66667%;
   position: relative;
 }
 @media only screen and (max-width: 768px) {
@@ -351,5 +351,26 @@ body {
     margin-left: 1%;
     left: 0;
     float: none;
+  }
+}
+
+.product {
+  width: 31.33333%;
+  min-height: 200px;
+  float: left;
+  margin-right: 1%;
+  margin-left: 1%;
+  background: #BF352D;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  height: 319px;
+}
+@media only screen and (max-width: 480px) {
+  .product {
+    width: 48%;
+    min-height: 200px;
+    float: left;
+    margin-right: 1%;
+    margin-left: 1%;
   }
 }
