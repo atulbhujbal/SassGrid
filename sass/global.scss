@@ -237,10 +237,10 @@ body{
 }
 
 .product{
-  @include column(4);
+  @include column(3);
   background:#BF352D;
   margin-bottom:$gutter/2;
   margin-top:$gutter/2;
-  height:319px;
+  height:227px;
   @include respond-to($mobile,6);
 }

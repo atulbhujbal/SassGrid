@@ -72,9 +72,9 @@ body {
 }
 */
 .row {
-  width: 102%;
-  margin-left: -1%;
-  margin-right: 1%;
+  width: 103%;
+  margin-left: -1.5%;
+  margin-right: 1.5%;
   overflow: hidden;
 }
 
@@ -192,11 +192,11 @@ body {
 }
 
 #diva {
-  width: 64.66667%;
+  width: 63.66667%;
   min-height: 200px;
   float: right;
-  margin-right: 1%;
-  margin-left: 1%;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
   height: 400px;
   background: #FB6740;
   right: 16.66667%;
@@ -205,39 +205,39 @@ body {
 @media only screen and (max-width: 768px) {
   #diva {
     left: 0;
-    width: 64.66667%;
+    width: 63.66667%;
     min-height: 200px;
     float: left;
-    margin-right: 1%;
-    margin-left: 1%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
   }
 }
 
 #divb {
-  width: 14.66667%;
+  width: 13.66667%;
   min-height: 200px;
   float: left;
-  margin-right: 1%;
-  margin-left: 1%;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
   background: #FDE6D3;
 }
 @media only screen and (max-width: 768px) {
   #divb {
     left: 0;
-    width: 31.33333%;
+    width: 30.33333%;
     min-height: 200px;
     float: left;
-    margin-right: 1%;
-    margin-left: 1%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
   }
 }
 
 #divc {
-  width: 14.66667%;
+  width: 13.66667%;
   min-height: 200px;
   float: left;
-  margin-right: 1%;
-  margin-left: 1%;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
   background: #A5E2A4;
   right: -66.66667%;
   position: relative;
@@ -246,39 +246,39 @@ body {
   #divc {
     left: 0;
     height: 400px;
-    width: 31.33333%;
+    width: 30.33333%;
     min-height: 200px;
     float: right;
-    margin-right: 1%;
-    margin-left: 1%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
   }
 }
 
 #divd {
-  width: 14.66667%;
+  width: 13.66667%;
   min-height: 200px;
   float: left;
-  margin-right: 1%;
-  margin-left: 1%;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
   background: #66D865;
 }
 @media only screen and (max-width: 768px) {
   #divd {
     left: 0;
-    width: 64.66667%;
+    width: 63.66667%;
     min-height: 200px;
     float: left;
-    margin-right: 1%;
-    margin-left: 1%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
   }
 }
 
 #dive {
-  width: 14.66667%;
+  width: 13.66667%;
   min-height: 200px;
   float: left;
-  margin-right: 1%;
-  margin-left: 1%;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
   background: #CA88FC;
   right: -66.66667%;
   position: relative;
@@ -287,11 +287,11 @@ body {
   #dive {
     height: 400px;
     clear: both;
-    width: 98%;
+    width: 97%;
     min-height: 200px;
     float: left;
-    margin-right: 1%;
-    margin-left: 1%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
     left: 0;
     float: none;
   }
@@ -300,11 +300,11 @@ body {
 /* Mobile Viewport*/
 @media only screen and (max-width: 480px) {
   #diva, #divb, #divc, #divd, #dive {
-    width: 98%;
+    width: 97%;
     min-height: 200px;
     float: left;
-    margin-right: 1%;
-    margin-left: 1%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
     left: 0;
     float: none;
   }
@@ -312,65 +312,65 @@ body {
 
 #divf {
   background: red;
-  width: 48%;
+  width: 47%;
   min-height: 200px;
   float: left;
-  margin-right: 1%;
-  margin-left: 1%;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
 }
 @media only screen and (max-width: 1000px) {
   #divf {
     background: orange;
     content: "Medium Viewport";
-    width: 64.66667%;
+    width: 63.66667%;
     min-height: 200px;
     float: left;
-    margin-right: 1%;
-    margin-left: 1%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
   }
 }
 @media only screen and (max-width: 768px) {
   #divf {
     background: blue;
     content: "Tablet Viewport";
-    width: 81.33333%;
+    width: 80.33333%;
     min-height: 200px;
     float: left;
-    margin-right: 1%;
-    margin-left: 1%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
   }
 }
 @media only screen and (max-width: 480px) {
   #divf {
     background: gray;
     content: "Mobile Viewport";
-    width: 98%;
+    width: 97%;
     min-height: 200px;
     float: left;
-    margin-right: 1%;
-    margin-left: 1%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
     left: 0;
     float: none;
   }
 }
 
 .product {
-  width: 31.33333%;
+  width: 22%;
   min-height: 200px;
   float: left;
-  margin-right: 1%;
-  margin-left: 1%;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
   background: #BF352D;
-  margin-bottom: 1%;
-  margin-top: 1%;
-  height: 319px;
+  margin-bottom: 1.5%;
+  margin-top: 1.5%;
+  height: 227px;
 }
 @media only screen and (max-width: 480px) {
   .product {
-    width: 48%;
+    width: 47%;
     min-height: 200px;
     float: left;
-    margin-right: 1%;
-    margin-left: 1%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
   }
 }
