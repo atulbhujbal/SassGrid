@@ -244,3 +244,11 @@ body{
   height:227px;
   @include respond-to($mobile,6);
 }
+
+.row div {
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}

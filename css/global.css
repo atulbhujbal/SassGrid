@@ -374,3 +374,11 @@ body {
     margin-left: 1.5%;
   }
 }
+
+.row div {
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}

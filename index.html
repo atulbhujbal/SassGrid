@@ -5,6 +5,8 @@
 <!--[if gt IE 8]><!--> <html> <!--<![endif]-->
 <head>
 	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/freewall.js"></script>		
 </head>
 <body>
 
@@ -28,39 +30,39 @@
 
 	<div id='content-wrapper'>
 		<div class='row'>
-			<div id='diva' >
+			<div class='brick' id='diva' >
 				A
 			</div>
-			<div id='divb' >
+			<div class='brick' id='divb' >
 				B
 			</div>
-			<div id='divc' >
+			<div class='brick' id='divc' >
 				C
 			</div>
-			<div id='divd' >
+			<div class='brick' id='divd' >
 				D
 			</div>
-			<div id='dive' >
+			<div class='brick' id='dive' >
 				E
 			</div>
 		</div>
 		<div class='row'>
-			<div class='product' >
+			<div class='product brick' >
 				A
 			</div>
-			<div class='product' >
+			<div class='product brick' >
 				A
 			</div>
-			<div class='product' >
+			<div class='product brick' >
 				A
 			</div>
-			<div class='product' >
+			<div class='product brick' >
 				A
 			</div>
-			<div class='product' >
+			<div class='product brick' >
 				A
 			</div>
-			<div class='product' >
+			<div class='product brick' >
 				A
 			</div>	
 		</div>
@@ -81,5 +83,25 @@
 		</nav>
 	</div>
 </footer>
+<script>
+
+$( document ).ready(function() {
+	$("#freewall").html(html);
+			
+			$(function() {
+				var wall = new freewall("#content-wrapper");
+				wall.reset({
+					selector: '.brick',
+					animate: true,
+					cellW: 160,
+					cellH: 160,
+					fixSize: 0,
+					onResize: function() {
+						wall.refresh();
+					}
+				});
+			});
+});
+</script>
 </body>
 </html>
